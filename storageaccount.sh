@@ -3,9 +3,9 @@
 
 
 #Variables
-$RESOURCE_GROUP_NAME='rg-soladeinde-training-cc-001'
-$STORAGE_ACCOUNT_NAME="inwayztfstate$(Get-Random)"
-$CONTAINER_NAME='inwayztfstate'
+$RESOURCE_GROUP_NAME='RG-Project10'
+$STORAGE_ACCOUNT_NAME="Newproj$(Get-Random)"
+$CONTAINER_NAME='Blob-Proj10'
 
 # Create storage account
 $storageAccount = New-AzStorageAccount -ResourceGroupName $RESOURCE_GROUP_NAME -Name $STORAGE_ACCOUNT_NAME -SkuName Standard_LRS -Location eastus
