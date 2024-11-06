@@ -3,7 +3,7 @@
 #############################################################################
 
 variable "vm_name" {
-  default = "vm-web-inwayz02"
+  default = "vm-proj-10"
 }
 
 variable "location"{
@@ -11,11 +11,11 @@ variable "location"{
 }
 
 variable "resource_group"{
-    default = "rg-soladeinde-training-cc-001"
+    default = "RG-Project10"
 }
 
 variable "vnet_name"{
-    default = "vnet-dev-web-001"
+    default = "vnet-proj-10"
 }
 
 variable "address_space"{
@@ -35,13 +35,13 @@ variable "admin_username"{
 }
 
 variable "admin_password"{
-    default = "Pol@Mas65210#@"
+    default = "adminuser"
 }
 
 variable "public_ip"{
-    default = "pip-web-inwayz02"
+    default = "pip-proj-10"
 }
 
 variable "network_security_group"{
-    default = "nsg-vm-web-inwayz02"
+    default = "nsg-proj-10"
 }
