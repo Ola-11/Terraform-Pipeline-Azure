@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/Terraform-Pipeline-Azure.git'
+                git 'https://github.com/Ola-11/Terraform-Pipeline-Azure.git'
             }
         }
 
