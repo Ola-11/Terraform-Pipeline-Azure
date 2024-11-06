@@ -35,7 +35,7 @@ variable "admin_username"{
 }
 
 variable "admin_password"{
-    default = "adminuser"
+    default = "Adminuser@1"
 }
 
 variable "public_ip"{
