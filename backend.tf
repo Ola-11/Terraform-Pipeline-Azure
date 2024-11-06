@@ -1,5 +1,1 @@
 
-terraform {
-  backend "azurerm" {
-  }
-}
