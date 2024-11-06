@@ -14,6 +14,10 @@ terraform {
   }
   backend "azurerm" {
       resource_group_name  = "RG-Project10"
+      storage_account_name  = "newproj1638639102"
+      container_name        = "blob-proj10"
+      key                    = "Q8ANz+fgMtNrx/gqm8ALXD36qzdQMxzhOAt7dCGynPF+kGrYUJLIIiWhPCg1BFCmxIqNyK9gv0BA+AStW19k2Q=="        
+  }
   
   }
 }
