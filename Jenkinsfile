@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Ola-11/Terraform-Pipeline-Azure.git', credentialsId: 'github-token1'
+                git branch: 'main', url: 'https://github.com/Ola-11/Terraform-Pipeline-Azure.git', credentialsId: 'github-token1'
             }
         }
 
