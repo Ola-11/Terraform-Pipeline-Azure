@@ -21,7 +21,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('SonarQubeServer') {
                     sh 'sonar-scanner \
-                        -Dsonar.projectKey=TerraformProject \  // Replace with a unique project name
+                        -Dsonar.projectKey="TerraformProject10_SonarQube"  
                         -Dsonar.sources=. \
                         -Dsonar.host.url=$SONAR_HOST_URL \
                         -Dsonar.login=$SONARQUBE_TOKEN'
