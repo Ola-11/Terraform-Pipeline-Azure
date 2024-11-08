@@ -23,7 +23,7 @@ pipeline {
                     sh '''
                     #!/bin/bash
                     export PATH=$PATH:/opt/sonar-scanner/sonar-scanner-6.2.1.4610-linux-x64/bin
-                    sonar-scanner -Dsonar.projectKey=TerraformProject10_SonarQube -Dsonar.sources=. -Dsonar.host.url=http://172.190.129.129:9000 -Dsonar.login=$SONARQUBE_TOKEN
+                    sonar-scanner -Dsonar.projectKey=Proj10-SonarQube-Test -Dsonar.sources=. -Dsonar.host.url=http://172.190.129.129:9000 -Dsonar.login=$SONARQUBE_TOKEN
                     '''
                 }
             }
