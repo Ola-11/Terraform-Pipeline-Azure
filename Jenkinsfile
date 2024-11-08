@@ -20,11 +20,11 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQubeServer') {
-                    sh '/opt/sonar-scanner/sonar-scanner-6.2.1.4610-linux-x64/bin/sonar-scanner \
-                        -Dsonar.projectKey="TerraformProject10_SonarQube" \
-                        -Dsonar.sources=. \
-                        -Dsonar.host.url=$SONAR_HOST_URL \
-                        -Dsonar.login=$SONARQUBE_TOKEN'
+                    sh '''
+                    #!/bin/bash
+                    export PATH=$PATH:/opt/sonar-scanner/sonar-scanner-6.2.1.4610-linux-x64/bin
+                    sonar-scanner -Dsonar.projectKey=TerraformProject10_SonarQube -Dsonar.sources=. -Dsonar.host.url=http://172.190.129.129:9000 -Dsonar.login=$SONARQUBE_TOKEN
+                    '''
                 }
             }
         }
